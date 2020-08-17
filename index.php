@@ -24,10 +24,25 @@ echo $root;*/
 //carrega usuario o login e senha
 
 
+//$usuario = new Usuario();
+//$usuario->login("randal","555");
+
+//echo $usuario;
+
+//criando insert - novo usuario
+
+//$aluno = new Usuario("aluno", "@aluno");
+
+//$aluno->insert();
+
+//echo $aluno;
+
 $usuario = new Usuario();
-$usuario->login("randal","555");
+
+$usuario->loadById(4);
+
+$usuario->update("professor", "444");
 
 echo $usuario;
-
 
 ?>
