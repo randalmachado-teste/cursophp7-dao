@@ -59,11 +59,25 @@ $aluno->insert();
 
 echo $aluno->__toString();*/
 
+// ALTERAR USUARIO
+
+
+/*
 $usuario = new Usuario();
 
 $usuario->loadById(2);
 
 $usuario->update("professor", "senha");
+*/
+
+$usuario = new Usuario();
+
+$usuario->loadById(5);
+
+$usuario->delete();
+
+echo $usuario;
+
 
 
 ?>
