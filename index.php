@@ -38,12 +38,32 @@ echo json_encode($search);
 */
 
 // CARREGA UM USUARIO USANDO O LOGIN E A SENHA
-
+/*
 $usuario = new Usuario();
 $usuario->login("randal","123");
 
 echo $usuario;
+*/
 
+// INSERT
+
+/*
+$aluno = new Usuario();
+
+$aluno->setIdusuario("4");
+$aluno->setDeslogin("Cecilia");
+$aluno->setDessenha("senha");
+$aluno->setDtcadastro("");
+
+$aluno->insert();
+
+echo $aluno->__toString();*/
+
+$usuario = new Usuario();
+
+$usuario->loadById(2);
+
+$usuario->update("professor", "senha");
 
 
 ?>
